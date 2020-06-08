@@ -1,0 +1,203 @@
+
+/* ------------> Variables */
+:root{
+    /* Colores */
+    --green-color: green;
+    --white-color: white;
+    --black-color: black;
+    --orange-color: rgba(215,143,99,.66);
+    /* Tipografía */
+    --normal:16px;
+    /* Espaciado */
+    --space: 10px;
+    /* Box Shadow */
+    --box-s: 0 0 5px var(--black-color);
+
+
+
+}
+
+html, body{
+    padding:0px;
+    margin:0px;
+    font-size: var(--normal);
+    font-family: Helvetica;
+}
+
+nav{
+    display: flex;
+    /* background-color: var(--green-color); */
+    background-image: url(../images/fondo_landing.jpg);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+}
+
+.main_section{
+    padding: 20%;
+    text-align: center;
+}
+
+.products{
+    /* height: 1000px; */
+    padding:20%;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.product {
+    padding: var(--space);
+    /* height: 550px; */
+    margin-top: -500px;
+}
+
+.product .content{
+    /* background-image: url("../images/Rectángulo\ 21.svg"); */
+    /* background-color: #D78F63; */
+    background-color: var(--orange-color);
+    /* background-color: white; */
+    padding: 15px 40px;
+    /* background-size: cover; */
+    /* background-position: center top; */
+    box-shadow: 0 0 5px #c1bcbc;
+    /* box-shadow: var(--box-s); */
+}
+
+.img_content{
+    text-align: center;
+    margin-top: -60px;
+}
+
+.main_button{
+    background-color: var(--black-color);
+    width: 100%;
+    padding: var(--space);
+    font-size:  17px;
+    color: white;
+    border:0;
+    cursor: pointer;
+    border-radius: 2px;
+    /* box-shadow: 0 0 5px var(--black-color); */
+    box-shadow: var(--box-s)
+}
+
+.main_button:hover{
+    background-color: #393939;
+}
+
+.benefits{
+    display: flex;
+    padding: 0% 20%;
+    justify-content: space-between;
+}
+
+.benefits img{
+    height: 140px;
+    align-items: center;
+}
+
+/* .benefit {
+    padding: 20px;
+} */
+
+.mentions{
+    display: flex;
+    padding: 20%;
+    /* margin: 100px; */
+    justify-content: space-between;
+}
+
+.mention {
+    width: 400px;
+    border-radius: 6px;
+    overflow: hidden;
+    /* background-color: #e6e6e6; */
+    /* border: 10px solid red; */
+    /* text-align: center; */
+    box-shadow: 0 0 5px #c1bcbc;
+}
+
+.mention_photo {
+    /* height: 400px; */
+    text-align: center;
+}
+
+.mention_photo img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: var(--box-s);
+}
+
+.mention_comment {
+    padding: var(--space);
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.footer {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_footer {
+    text-align: center;
+}
+
+.social_networks {
+    padding-right: var(--space);
+}
+
+.footer a {
+    margin-left: var(--space);
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.footer a:hover{
+    color: #c1bcbc;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid white; */
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.ig{
+    background-image: url(../images/ig_logo_white.svg);
+}
+
+.social-link.fb{
+    background-image: url(../images/fb_logo_white.svg);
+}
+
+.social-link.wp{
+    background-image: url(../images/wp_logo_white.svg);
+}
