@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(252, 197, 20, 38%);
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.return_home {
+    margin-top: -100px;
+}
